@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    column-gap: 8px;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: rgb(143, 59, 221);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+    background-color: rgb(231, 208, 253);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: .8rem 10px;
+}
+
+.navigation a:hover {
+    background-color: peachpuff;
+}
+
+.navigation li.current {
+    background-color: bisque;
+    text-decoration: underline;
+}
+
+.cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.cards section h2 {
+    background-color: bisque;
+    padding: 0.5rem;
+}
+
+.me {
+    background-color: lightgoldenrodyellow;
+    border: solid 1px #eee;
+    border-radius: 5px;
+}
+
+.me img {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.me p {
+    padding: 1rem;
+}
+
+.courses {
+    text-align: center;
+}
+
+.cert {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    gap: 8px;
+}
+
+.cert a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(231, 208, 253);;
+    padding: .5rem;
+    border: solid 1px #eee;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.courses-list ul li {
+    list-style: none;
+    padding: .5rem;
+    background-color: rgb(231, 208, 253);
+    margin-bottom: .5rem;
+    border: solid 1px #eee;
+}
+
+footer {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    padding: 1rem 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
