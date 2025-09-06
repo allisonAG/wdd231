@@ -17,6 +17,12 @@ h2 {
 
 body {
     font-family: 'Roboto', sans-serif;
+    
+}
+
+main {
+    padding: 1.5rem;
+    margin: 0 auto;
 }
 
 header {
@@ -84,17 +90,18 @@ header span {
     text-decoration: underline;
 }
 
-.cards {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin: 1rem;
-}
 
-.cards section h2 {
+
+.cards h2 {
     background-color: bisque;
     padding: 0.5rem;
+}
+
+.me-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .me {
@@ -105,43 +112,69 @@ header span {
 
 .me img {
     display: block;
+    padding: 1rem;
+    height: auto;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 1rem 0;
 }
 
 .me p {
     padding: 1rem;
 }
 
+
+/* Web Certificate Courses*/
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 1rem;
+}
+
+.buttons button {
+    padding: 1rem;
+    font-weight: bold;
+}
+
 .courses {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#certification {
     text-align: center;
 }
 
-.cert {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1rem;
-    gap: 8px;
-}
-
-.cert a {
+.cert ul li {
+    list-style: none;
     text-decoration: none;
     color: black;
-    background-color: rgb(231, 208, 253);;
     padding: .5rem;
     border: solid 1px #eee;
     border-radius: 5px;
     font-weight: bold;
 }
 
-.courses-list ul li {
-    list-style: none;
-    padding: .5rem;
+.cert.completed ul li {
     background-color: rgb(231, 208, 253);
-    margin-bottom: .5rem;
-    border: solid 1px #eee;
 }
 
+.cert.completed li::before {
+    content: "\2714\0020";
+}
+
+.cert.not-completed ul li {
+    background-color: bisque;
+}
+
+#credits {
+    text-align: center;
+    margin: 1rem;
+}
+
+
+/*Footer*/
 footer {
     background-color: lightgoldenrodyellow;
     text-align: center;

@@ -32,33 +32,30 @@
     <main>
         <h1>Home</h1>
         <div class="cards">
-            <section class="me">
-                <h2>About Me</h2>
-                <p>My name is Allison Aguirre. I was born in Mérida, Yucatán, Mexico, and I currently
-                    live in Toluca, State of Mexico. I am currently working as a Recruiter Assistant at a
-                    recruitment agency. I love listening to music, watching films, working out, and visiting new places.</p>
-            </section>
-            <section class="me">
-                <h2>Student Photo</h2>
-                <img src="images/allison.jpg" alt="My photo">
-            </section>
+            <div class="me-section">
+                <section class="me">
+                    <h2>About Me</h2>
+                    <p>My name is Allison Aguirre. I was born in Mérida, Yucatán, Mexico, and I currently
+                        live in Toluca, State of Mexico. I am currently working as a Recruiter Assistant at a
+                        recruitment agency. I love listening to music, watching films, working out, and visiting new places.</p>
+                </section>
+                <section class="me">
+                    <h2>Student Photo</h2>
+                    <img src="images/allison.jpg" alt="My photo">
+                </section>
+            </div>
             <section class="courses">
                 <h2>Web Certificate Courses</h2>
-                <div class="cert">
-                    <a href="#">All</a>
-                    <a href="#">CSE</a>
-                    <a href="#">WDD</a>
+                <div class="buttons">
+                    <button id="all">All Courses</button>
+                    <button id="wdd">WDD Courses</button>
+                    <button id="cse">CSE Courses</button>
                 </div>
-                <div class="courses-list">
-                    <ul>
-                        <li>WDD 130</li>
-                        <li>WDD 131</li>
-                        <li>WDD 231</li>
-                    </ul>
-                    <p>The total credits for course listed above is 6</p>
-                </div>
+                <p id="credits"></p>
+                <div id="certification"></div>
             </section>
         </div>
+        
     </main>
     <footer>
         <div class="social">

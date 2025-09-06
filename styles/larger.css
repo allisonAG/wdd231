@@ -1,0 +1,24 @@
+@media only screen and (min-width: 38rem) {
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+    
+    .me-section {
+        grid-template-columns: auto 400px;
+        gap: 1.5rem;
+    }
+
+    #certification {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+        
+    }
+}
