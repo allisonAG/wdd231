@@ -137,11 +137,6 @@ header span {
     font-weight: bold;
 }
 
-.courses {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
 #certification {
     text-align: center;
 }
