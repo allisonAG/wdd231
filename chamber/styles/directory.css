@@ -186,16 +186,5 @@ footer {
     background-color: #bbb;
 }
 
-#grid::before {
-    content: "\f00a";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-}
-
-#list::before {
-    content: "\f03a";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-}
 
 

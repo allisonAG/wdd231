@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Allison Aguirre"></meta>
+    <meta name="author" content="Allison Aguirre">
     <meta name="description" content="Toluca Chamber of Commerce Business Directory Page.">
     <meta property="og:title" content="Home Page - WDD 231 Project: Toluca Chamber of Commerce.">
     <meta property="og:description" content="This website serves as a resource hub for businesses in the city of Toluca. The site provides information on
@@ -16,12 +16,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/directory.js" defer></script>
     <script src="../scripts/date.js" defer></script>
     <script src="../scripts/navigation.js" defer></script>
-    <title>Directory</title>
+    <title>Toluca Chamber of Commerce Directory</title>
 </head>
 <body>
     <header>
@@ -44,10 +43,14 @@
     <main>
         <h1>Home</h1>
         <div class="menu">
-            <button id="grid" aria-label="Grid menu view"></button>
-            <button id="list"></button>
+            <button id="grid" aria-label="Grid menu view">
+                <img src="images/grid-3x3-gap-fill.svg" alt="Grid view" width="16" height="16">
+            </button>
+            <button id="list" aria-label="List menu view">
+                <img src="images/list-task.svg" alt="List view" width="16" height="16">
+            </button>
         </div>
-        <div id="cards" class="grid" aria-label="List menu view"></div>
+        <div id="cards" class="grid"></div>
     </main>
     <footer>
         <div>
