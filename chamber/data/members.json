@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Arabela",
+            "address": "Calle 3 Norte 102, Parque Toluca 2000",
+            "phone": 7222755100,
+            "websiteurl": "https://www.arabela.com/",
+            "imageurl": "https://registro.arabela.com/images/logo@2x.png",
+            "membershiplevel": 2
+        },
+        {
+            "name": "Barcel",
+            "address": "Carretera Mexico-Toluca, Industrial Lerma 52000",
+            "phone": 7222791139,
+            "websiteurl": "https://www.antoja2.com/",
+            "imageurl": "https://www.nutreaunnino.org.mx/wp-content/uploads/2021/08/logo-gpo-bimbo-barcel.png",
+            "membershiplevel": 3
+        }, 
+        {
+            "name": "Convertex",
+            "address": "Reolin Barejón 21, Lerma, La Estación 52000",
+            "phone": 7282850419,
+            "websiteurl": "https://www.lohechoenmexico.mx/convertex/",
+            "imageurl": "https://www.lohechoenmexico.mx/wp-content/uploads/2014/01/logo_hmx.png",
+            "membershiplevel": 1
+        },
+        {
+            "name": "Durakon",
+            "address": "Santa Marta 3, Parque Industrial, Lerma 52000",
+            "phone": 7282929900,
+            "websiteurl": "https://durakon.mx/",
+            "imageurl": "https://durakon.mx/wp-content/uploads/2025/02/logo-durakon-azul-industrial-vF.png",
+            "membershiplevel": 2
+        },
+        {
+            "name": "Embotelladora Toluqueña",
+            "address": "Av Independencia S/N, Zona Industrial Toluca, 50071 Santa Ana Tlapaltitlán, Méx",
+            "phone": 7225408399,
+            "websiteurl": "https://www.canacintraem.org.mx/",
+            "imageurl": "https://www.canacintraem.org.mx/blog/wp-content/uploads/2020/09/descarga.jpg",
+            "membershiplevel": 1
+        },
+        {
+            "name": "Grupo La Moderna",
+            "address": "Leandro Valle 404-200 Col, Reforma y FFCC Nacionales, 50070 Toluca de Lerdo, Méx.",
+            "phone": 7222653100,
+            "websiteurl": "https://lamoderna.com.mx/es",
+            "imageurl": "https://lamoderna.com.mx/templates/la_moderna/images/square-logo.jpg",
+            "membershiplevel": 3
+        },
+        {
+            "name": "Funcosa",
+            "address": "C. Prolongacion 18 de Marzo 200, Sector Popular, 50040 Toluca de Lerdo, Méx.",
+            "phone": 7222134682,
+            "websiteurl": "https://www.cosmos.com.mx/empresa/funcosa-47sx.html",
+            "imageurl": "https://www.ferremilenia.com.mx/images/venta-de-material-para-ferreteria-y-plomeria-ferremilenia-26.png",
+            "membershiplevel": 2
+        }
+    ]
+}
