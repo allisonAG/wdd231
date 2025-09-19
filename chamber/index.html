@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Allison Aguirre">
+    <meta name="description" content="Toluca Chamber of Commerce Business Home Page.">
+    <meta property="og:title" content="Home Page - WDD 231 Project: Toluca Chamber of Commerce.">
+    <meta property="og:description" content="This website serves as a resource hub for businesses in the city of Toluca. The site provides information on
+        local events, host networking opportunities, create business directories, and encourage local shopping.">
+    <meta property="og:image" content="https://www.gob.mx/cms/uploads/image/file/533018/IMG_0926-001.jpg">
+    <meta property="og:url" content="https://allisonag.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script type="module" src="scripts/home.js"></script>
+    <script src="../scripts/date.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <title>Toluca Chamber of Commerce Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-section">
+            <div class="branding">
+                <img src="images/logo.png" alt="Site Logo" width="1" height="1">
+                <span>Toluca Chamber of Commerce</span>
+            </div>
+            <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+            
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Toluca" width="500" height="250">
+            </picture>
+
+            <div class="join">
+                <a href="join.html" class="join-button">Join the Chamber of Commerce</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="container-1">
+            <section>
+                <h2 class="title-bg">Events</h2>
+                <div class="info-container">
+                    <p>Business Networking Breakfast</p>
+                    <p>October 15, 2025 – 9:00 a.m. to 12:00 p.m.</p>
+                    <p>Centro de Convenciones Toluca</p>
+                </div>
+            </section>
+            <section>
+                <h2 class="title-bg">Current Weather</h2>
+                <div class="weather">
+                    <figure>
+                        <img id="w-icon" src="" alt="">
+                    </figure>
+                    <div>
+                        <p id="current-weather"></p>
+                        <p id="desc"></p>
+                        <p>High: <span id="high"></span></p>
+                        <p>Low: <span id="low"></span></p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <p>Sunrise: <span id="sunrise"></span></p>
+                        <p>Sunset: <span id="sunset"></span></p>
+                    </div>
+                </div>  
+            </section>
+            <section>
+                <h2 class="title-bg">Weather Forecast</h2>
+                <div class="info-container">
+                    <div id="day1"></div>
+                    <div id="day2"></div>
+                    <div id="day3"></div>
+                </div>
+            </section>
+        </div>
+        <section id="spotlights"></section>
+    </main>
+    <footer>
+        <div>
+            <h3>Toluca Chamber of Commerce</h3>
+            <p>68 Paseo de la Palmera</p>
+            <p>Toluca, Mexico State 52004</p>
+            <p>info@tolucacc.org</p>
+            <p>(722) 172-8224</p>
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/allisonAG"><img src="images/youtube.svg" alt="Youtube Profile"></a>
+            <a href="https://www.linkedin.com/in/allison-desire-aguirre"><img src="images/linkedin.svg"
+                    alt="LinkedIn Profile"></a>
+            <a href="https://www.facebook.com/Alli.dsr?locale=es_LA"><img src="images/facebook.svg" alt="X Profile"></a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Allison Aguirre</p>
+            <p>&copy; <span id="currentyear"></span> Toluca Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

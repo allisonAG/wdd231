@@ -1,13 +1,13 @@
-import { getMemberData } from "./dataService.mjs";
+export function displayMembers(members, container, options = {}) {
+    const { showMembership = false } = options; //not show membership level
+    container.innerHTML = "";
 
-const cards = document.querySelector("#cards");
+    const membershipNames = {
+        1: "Member",
+        2: "Silver",
+        3: "Gold"
+    };
 
-(async () => {
-    const members = await getMemberData();
-    displayMembers(members);
-})();
-
-export function displayMembers(members) {
     members.forEach(member => {
         const card = document.createElement('section');
         const image = document.createElement('img');
@@ -33,24 +33,14 @@ export function displayMembers(members) {
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
+        
 
-        cards.appendChild(card);
+        if (showMembership) {
+            const level = document.createElement('p');
+            level.textContent = `Membership: ${membershipNames[member.membershiplevel]}`;
+            card.appendChild(level);
+        }
+
+        container.appendChild(card);
     });
-}
-
-// Grid and List View
-const gridbtn = document.querySelector('#grid');
-const listbtn = document.querySelector('#list');
-const display = document.querySelector('#cards');
-
-gridbtn.addEventListener('click', () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
-});
-
-listbtn.addEventListener('click', showList);
-
-function showList() {
-    display.classList.add("list");
-    display.classList.remove("grid");
 }

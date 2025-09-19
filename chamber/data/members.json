@@ -6,7 +6,7 @@
             "phone": 7222755100,
             "websiteurl": "https://www.arabela.com/",
             "imageurl": "https://registro.arabela.com/images/logo@2x.png",
-            "membershiplevel": 2
+            "membershiplevel": 2 
         },
         {
             "name": "Barcel",
@@ -52,9 +52,10 @@
             "name": "Funcosa",
             "address": "C. Prolongacion 18 de Marzo 200, Sector Popular, 50040 Toluca de Lerdo, Méx.",
             "phone": 7222134682,
-            "websiteurl": "https://www.cosmos.com.mx/empresa/funcosa-47sx.html",
+            "websiteurl": "https://www.cosmos.com.mx/",
             "imageurl": "https://www.ferremilenia.com.mx/images/venta-de-material-para-ferreteria-y-plomeria-ferremilenia-26.png",
             "membershiplevel": 2
         }
     ]
 }
+
