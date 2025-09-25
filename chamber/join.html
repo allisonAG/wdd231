@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Allison Aguirre">
+    <meta name="description" content="Toluca Chamber of Commerce Business Directory Page.">
+    <meta property="og:title" content="Home Page - WDD 231 Project: Toluca Chamber of Commerce.">
+    <meta property="og:description" content="This website serves as a resource hub for businesses in the city of Toluca. The site provides information on
+        local events, host networking opportunities, create business directories, and encourage local shopping.">
+    <meta property="og:image" content="https://www.gob.mx/cms/uploads/image/file/533018/IMG_0926-001.jpg">
+    <meta property="og:url" content="https://allisonag.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/join.js" defer></script>
+    <script src="../scripts/date.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <title>Toluca Chamber of Commerce Join</title>
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Site Logo" width="1" height="1">
+            <span>Toluca Chamber of Commerce</span>
+        </div>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join Us</h1>
+        <div class="mb-container">
+        <div>
+            <h2>Membership Application Form</h2>
+            <form method="GET" action="thanks.html" class="app-form">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Title <input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"
+                        title="Your Organizational Title"></label>
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                        autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone" autocomplete="organization" title="A Phone Number with dashes">
+                </label>
+            
+                <h3>Membership Level</h3>
+                <label><input type="radio" value="np" name="level" required>NP Membership</label>
+                <label><input type="radio" value="bronze" name="level" required>Bronze Membership</label>
+                <label><input type="radio" value="silver" name="level" required>Silver Membership</label>
+                <label><input type="radio" value="gold" name="level" required>Gold Membership</label>
+            
+                <h3>Business/organization's description</h3>
+                <textarea name="description" title="Describe your business or organization here"></textarea>
+            
+                <input type="hidden" name="timestamp" id="timestamp">
+            
+                <button type="submit">Join the Chamber</button>
+            </form>
+        </div>
+        <div>
+            <h2>Membership Levels</h2>
+            <section class="card-container">
+                <div>
+                    <h3>Non Profit Membership Level</h3>
+                    <button data-modal="modal1">Learn More</button>
+                </div>
+                <div>
+                    <h3>Bronze Membership Level</h3>
+                    <button data-modal="modal2">Learn More</button>
+                </div>
+                <div>
+                    <h3>Silver Membership Level</h3>
+                    <button data-modal="modal3">Learn More</button>
+                </div>
+                <div>
+                    <h3>Gold Membership Level</h3>
+                    <button data-modal="modal4">Learn More</button>
+                </div>
+            </section>
+            </div>
+        </div>    
+            
+        <dialog id="modal1">
+            <h3>Non Profit Membership Level</h3>
+            <ul>
+                <li>Basic access to online resources for non-profit organizations</li>
+                <li>Free listing in the member directory</li>
+                <li>Invitations to community events</li>
+                <li>Monthly newsletters and updates</li>
+            </ul>
+            <button class="close">Close</button>
+        </dialog>
+
+        <dialog id="modal2">
+            <h3>Bronze Membership Level</h3>
+            <p>
+                <ul>
+                    <li>All NP Membership benefits</li>
+                    <li>Discounts on workshops and training sessions</li>
+                    <li>Early access to selected events</li>
+                    <li>Email support for general inquiries</li>
+                </ul>
+            </p>
+            <button class="close">Close</button>
+        </dialog>
+
+        <dialog id="modal3">
+            <h3>Silver Membership Level</h3>
+            <p>
+                <ul>
+                    <li>All Bronze Membership benefits</li>
+                    <li>Full access to exclusive webinars</li>
+                    <li>Featured listing in the member directory</li>
+                    <li>Premium downloadable materials (templates, guides)</li>
+                    <li>Priority registration for limited-capacity events</li>
+                </ul>
+            </p>
+            <button class="close">Close</button>
+        </dialog>
+
+        <dialog id="modal4">
+            <h3>Gold Membership Level</h3>
+            <p>
+                <ul>
+                    <li>All Silver Membership benefits</li>
+                    <li>VIP access to conferences and in-person events</li>
+                    <li>Personalized consulting (X hours per month)</li>
+                    <li>Public recognition as a Gold Member</li>
+                    <li>Opportunities to collaborate on special projects and program decisions</li>
+                </ul>
+            </p>
+            <button class="close">Close</button>
+        </dialog>
+
+    </main>
+    <footer>
+        <div>
+            <h3>Toluca Chamber of Commerce</h3>
+            <p>68 Paseo de la Palmera</p>
+            <p>Toluca, Mexico State 52004</p>
+            <p>info@tolucacc.org</p>
+            <p>(722) 172-8224</p>
+        </div>
+        
+        <div class="social">
+            <a href="https://github.com/allisonAG"><img src="images/youtube.svg" alt="Youtube Profile"></a>
+            <a href="https://www.linkedin.com/in/allison-desire-aguirre"><img src="images/linkedin.svg"
+                    alt="LinkedIn Profile"></a>
+            <a href="https://www.facebook.com/Alli.dsr?locale=es_LA"><img src="images/facebook.svg" alt="X Profile"></a>
+        </div>
+        
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Allison Aguirre</p>
+            <p>&copy; <span id="currentyear"></span> Toluca Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

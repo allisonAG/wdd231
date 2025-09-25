@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2 {
+    margin: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #14213D;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.branding img {
+    width: 24px;
+    height: auto;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation li a:hover {
+    text-decoration: underline;
+}
+
+.navigation li.current {
+    text-decoration: underline;
+}
+
+
+
+/* mobile */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navigation ul li {
+        text-align: center;
+        list-style: none;
+        padding: .5rem;
+    }
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #14213D;
+    text-align: left;
+    padding: 1rem 10px;
+    color: #fff;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.social a {
+    display: flex;
+    width: 54px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+/* Form */
+
+.app-form {
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 600px;
+    text-align: left;
+}
+
+.app-form h3 {
+    margin: 1rem 0;
+}
+
+.app-form fieldset {
+    margin: 1rem 0;
+    padding: 1rem 2%;
+}
+
+.app-form input[type="text"],
+.app-form input[type="tel"],
+.app-form input[type="email"],
+.app-form label,
+textarea {
+    display: block;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.app-form input[type="radio"] {
+    margin-right: 6px;
+}
+
+.app-form button {
+    background-color: rgb(155, 8, 8);
+    color: #fff;
+    padding: .75rem;
+    border: none;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+/* Membership leves */
+.mb-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.card-container div {
+    background-color: #eee;
+    padding: 1rem;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+}
+
+.card-container div button {
+    margin-top: 1rem;
+}
