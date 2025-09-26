@@ -3,6 +3,7 @@ import { getMemberData } from "./dataService.mjs";
 // Weather Section
 
 const weatherIcon = document.querySelector('#w-icon');
+const icon = document.createElement('img');
 const currentTemp = document.querySelector('#current-weather');
 const captionDsc = document.querySelector("#desc");
 const highTemp = document.querySelector("#high");
@@ -52,8 +53,9 @@ async function fetchForecast() {
 
 function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', data.weather[0].description);
+    icon.setAttribute('src', iconsrc);
+    icon.setAttribute('alt', data.weather[0].description);
+    weatherIcon.appendChild(icon);
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     captionDsc.innerHTML = data.weather[0].description;
     highTemp.innerHTML = `${data.main.temp_max}&deg;`;

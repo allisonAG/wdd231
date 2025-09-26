@@ -1,16 +1,22 @@
-const memberships = document.querySelectorAll('.card-container button');
-const membershipDetails = document.querySelectorAll('dialog');
+const membershipButtons = document.querySelectorAll('.card-container button');
+const membershipDialog = document.querySelectorAll('dialog .close');
 
-memberships.forEach(btn => {
+membershipButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         const modalId = btn.dataset.modal;
         document.getElementById(modalId).showModal();
     })
 });
 
-document.querySelectorAll('dialog .close').forEach(btn => {
+membershipDialog.forEach(btn => {
     btn.addEventListener('click', () => {
         btn.closest('dialog').close();
     })
     
 });
+
+
+const timestamp = document.querySelector('#timestamp');
+
+const now = new Date();
+timestamp.value = now.toLocaleString();
