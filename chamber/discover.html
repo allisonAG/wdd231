@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Allison Aguirre">
-    <meta name="description" content="Toluca Chamber of Commerce Business Directory Page.">
+    <meta name="description" content="Toluca Chamber of Commerce Business Home Page.">
     <meta property="og:title" content="Home Page - WDD 231 Project: Toluca Chamber of Commerce.">
     <meta property="og:description" content="This website serves as a resource hub for businesses in the city of Toluca. The site provides information on
         local events, host networking opportunities, create business directories, and encourage local shopping.">
     <meta property="og:image" content="https://www.gob.mx/cms/uploads/image/file/533018/IMG_0926-001.jpg">
     <meta property="og:url" content="https://allisonag.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-larger.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
-    <script type="module" src="scripts/directory.js"></script>
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-medium.css">
+    <link rel="stylesheet" href="styles/discover-larger.css">
+    <script type="module" src="scripts/discover.js"></script>
     <script src="../scripts/date.js" defer></script>
     <script src="../scripts/navigation.js" defer></script>
-    <title>Toluca Chamber of Commerce Directory</title>
+    <title>Discover</title>
 </head>
+
 <body>
     <header>
         <div class="branding">
@@ -29,28 +36,20 @@
             <span>Toluca Chamber of Commerce</span>
         </div>
         <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
-        
+    
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="#">Directory</a></li>
+                <li><a href="#">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
             </ul>
-        </nav>   
+        </nav>
     </header>
-    
+
     <main>
-        <h1>Home</h1>
-        <div class="menu">
-            <button id="grid" aria-label="Grid menu view">
-                <img src="images/grid-3x3-gap-fill.svg" alt="Grid view" width="16" height="16">
-            </button>
-            <button id="list" aria-label="List menu view">
-                <img src="images/list-task.svg" alt="List view" width="16" height="16">
-            </button>
-        </div>
-        <div id="cards" class="grid"></div>
+        <h1>Toluca's Areas of Interest</h1>
+        <div id="areasCards"></div>
     </main>
     <footer>
         <div>
@@ -60,7 +59,7 @@
             <p>info@tolucacc.org</p>
             <p>(722) 172-8224</p>
         </div>
-       
+
         <div class="social">
             <a href="https://github.com/allisonAG"><img src="images/youtube.svg" alt="Youtube Profile"></a>
             <a href="https://www.linkedin.com/in/allison-desire-aguirre"><img src="images/linkedin.svg"
@@ -74,7 +73,8 @@
             <p>&copy; <span id="currentyear"></span> Toluca Chamber of Commerce</p>
             <p id="lastModified"></p>
         </div>
-        
-    </footer> 
+
+    </footer>
 </body>
+
 </html>

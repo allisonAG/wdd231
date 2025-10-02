@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    margin: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #14213D;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.branding img {
+    width: 24px;
+    height: auto;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation li a:hover {
+    text-decoration: underline;
+}
+
+.navigation li.current {
+    text-decoration: underline;
+}
+
+
+
+/* mobile */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navigation ul li {
+        text-align: center;
+        list-style: none;
+        padding: .5rem;
+    }
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #14213D;
+    text-align: left;
+    padding: 1rem 10px;
+    color: #fff;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.social a {
+    display: flex;
+    width: 54px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+/* Areas Cards*/
+
+#areasCards section {
+    margin: 1rem;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding: 1rem;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "address"
+    "button";
+    gap: 1rem;
+    
+}
+
+#areasCards section h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+    
+}
+
+#areasCards section img {
+    width: 100%;
+    grid-area: image;
+}
+
+#areasCards section p {
+    grid-area: description;
+}
+
+#areasCards section address {
+    grid-area: address;
+}
+
+#areasCards button {
+    grid-area: button;
+    padding: .75rem;
+    background-color: rgb(155, 8, 8);
+    color: #fff;
+    border: none;
+}

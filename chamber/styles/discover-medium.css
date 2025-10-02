@@ -1,0 +1,43 @@
+@media only screen and (min-width: 38rem) {
+.navigation ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+#areasCards section {
+
+    display: grid;
+    grid-template-areas: 
+    "image name"
+    "image description"
+    "image address"
+    "image button";
+    
+}
+
+#areasCards section img {
+    width: 300px;
+}
+
+.opac:hover {
+    opacity: .5;
+}
+
+}

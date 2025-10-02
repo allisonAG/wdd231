@@ -1,0 +1,52 @@
+{
+    "areas": [
+        {
+            "title": "Cosmovitral Botanic Garden",
+            "address": "Av. Sebastián Lerdo de Tejada S/N, Centro, 50000 Toluca de Lerdo, Méx.",
+            "description": "The Cosmovitral Botanical Garden is a space located in the city of Toluca, the capital of the State of Mexico, in Mexico. The building that houses the botanical garden is an Art Nouveau wrought-iron structure built during the Porfiriato, in the early 20th century, to serve as the September 16 Market.",
+            "image": "./images/cosmovitral.webp"
+        },
+        {
+            "title": "Catedral de Toluca (San José)",
+            "address": "Av. Independencia 303, Centro, 50000 Toluca de Lerdo, Méx.",
+            "description": "The Metropolitan Cathedral of Toluca, also known as the Cathedral of Saint Joseph, is a Catholic Christian cathedral built on the site of the former Franciscan Convent of the Assumption. It is located in the city center of Toluca de Lerdo, south of Los Mártires Square.",
+            "image": "./images/catedral.webp"
+        },
+        {
+            "title": "Portales de Toluca",
+            "address": "50000, Belisario Domínguez 100C, Centro, Toluca de Lerdo, Méx.",
+            "description": "A complex of 19th-century buildings with arches that features shopping centers, restaurants, and festive events.",
+            "image": "./images/portales.webp"
+        },
+        {
+            "title": "Nemesio Diez Stadium",
+            "address": "Constituyentes Pte. 1000, Barrio de San Bernardino, 50080 Toluca de Lerdo, Méx.",
+            "description": "The Nemesio Díez Stadium is a soccer stadium located in the city of Toluca de Lerdo, the capital of the State of Mexico, in Mexico. It is the regular home of Deportivo Toluca F.C. and Deportivo Toluca F.C. Femenil.",
+            "image": "./images/nemesio-diez.webp"
+        },
+        {
+            "title": "Alfeñique Museum",
+            "address": "Av. Independencia 502, Barrio de Sta Clara, 50090 Toluca de Lerdo, Méx.",
+            "description": "The Alfeñique Museum was inaugurated in 2014. Through its five permanent rooms, you can learn about Mexican cuisine, the history of traditional Mexican sweets, and how they are made—especially alfeñique and how it is prepared in different states of the country.",
+            "image": "./images/museo-alfeñique.webp"
+        },
+        {
+            "title": "Acuarela Museum",
+            "address": "Melchor Ocampo 105, Barrio de la Merced, 50080 Toluca de Lerdo, Méx.",
+            "description": "Located in a beautiful 19th-century house, representative of the city of Toluca, the Watercolor Museum is one of the most emblematic cultural venues of its kind in the entire country.",
+            "image": "./images/museo-acuarela.webp"
+        },
+        {
+            "title": "La Marquesa",
+            "address": "Parque La Marquesa, Parques Nacionales, Toluca de Lerdo 50100 Edomex",
+            "description": "Located between the cities of Mexico City and Toluca, the municipality of Ocoyoacac offers visitors countless natural wonders within the marvelous ecosystem of the Miguel Hidalgo National Park, better known as La Marquesa, which is made up of forests, cliffs, streams, waterfalls, valleys, historic monuments, and idyllic trails.",
+            "image": "./images/la-marquesa.webp"
+        },
+        {
+            "title": "Nevado de Toluca",
+            "address": "Andador Valentín Gómez Farías, núm. 108, San Felipe Tlalmimilolpan, Toluca Estado de México.",
+            "description": "The Nevado de Toluca, still also referred to as Xinantécatl, is a Mexican volcano located in the State of Mexico, in the Valley of Toluca. It is situated 22 km southwest of the state capital, Toluca de Lerdo.",
+            "image": "./images/nevado-de-toluca.webp"
+        }
+    ]
+}
