@@ -7,7 +7,6 @@ const cards = document.querySelector('#areasCards');
 })();
 
 
-
 function displayAreas(areas) {
     areas.forEach(area => {
         const card = document.createElement('section');
@@ -38,3 +37,36 @@ function displayAreas(areas) {
         cards.appendChild(card);
     });
 }
+
+// Visitor Message
+const messageContainer = document.querySelector('#visitor-message');
+const currentDate = Date.now();
+const msToDays = 86400000;
+
+
+let lastVisit = localStorage.getItem("lastVisit-ls"); // local storage stores only strings
+
+
+if (lastVisit) {
+    lastVisit = parseInt(lastVisit); // convert to number
+    const dayDiff = (currentDate - lastVisit) / msToDays;
+
+    if (dayDiff < 1) {
+        messageContainer.innerHTML = `Back so soon! Awesome!`;
+    }
+
+    else if (dayDiff == 1) {
+        messageContainer.innerHTML = `You last visited 1 day ago.`;
+    }
+    else {
+        messageContainer.innerHTML = `You last visited ${dayDiff.toFixed(0)} days ago.`;
+    }  
+}
+else {
+    messageContainer.innerHTML = `Welcome! Let us know if you have any questions`;
+}
+
+localStorage.setItem("lastVisit-ls", currentDate);
+
+
+
